@@ -1,0 +1,2 @@
+// Kopieren nach Config/Local.xcconfig und eigene Apple-Team-ID eintragen (Xcode → Signing & Capabilities).
+DEVELOPMENT_TEAM = XXXXXXXXXX

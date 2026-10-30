@@ -1,0 +1,12 @@
+.DS_Store
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# private Voreinstellungen und Signatur – nie ins Git
+GPSTracker/Resources/PrivateDefaults.json
+Config/Local.xcconfig

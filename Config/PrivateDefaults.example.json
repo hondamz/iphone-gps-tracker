@@ -1,0 +1,7 @@
+{
+  "serverTarget4": {
+    "name": "Mein Server",
+    "url": "http://<rechner>.<tailnet>.ts.net:8085/api/v1/ingest",
+    "account": "<benutzer>"
+  }
+}
