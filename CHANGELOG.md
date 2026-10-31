@@ -4,6 +4,12 @@ Format angelehnt an [Keep a Changelog](https://keepachangelog.com/de/1.1.0/). Ve
 
 ## [Unreleased]
 
+## [0.11.1] – 2026-10-31 · Build 17
+
+### Neu
+- **Datenschutzerklärung** `docs/datenschutz.md` für App Store Connect und TestFlight (nur Doku, App unverändert).
+
+
 ## [0.11.0] – 2026-10-30 · Build 16
 
 ### Geändert

@@ -7,7 +7,7 @@ Simulations-Betriebsarten (Mainz/Paderborn/Deutschland und Flughafen Köln/Bonn)
 
 | | |
 |---|---|
-| **Status** | v0.11.0 (Build 16) – neue Bundle-ID, Release für Tester vorbereitet, Upload steht aus (30.10.2026) |
+| **Status** | v0.11.1 (Build 17) – Datenschutzerklärung ergänzt; Build 0.11.0 (16) in TestFlight hochgeladen (31.10.2026) |
 | **Plattform** | iPhone, iOS 18+ · Swift 6 · SwiftUI · SwiftData · MapKit |
 | **Repository** | `<privates Git-Repo>` (privater Git-Server, privat) |
 | **Lokaler Ordner** | `iphone-gps-tracker` (Git-Arbeitskopie, Synology Drive) |
@@ -21,6 +21,7 @@ Simulations-Betriebsarten (Mainz/Paderborn/Deutschland und Flughafen Köln/Bonn)
 | [docs/funktionen.md](docs/funktionen.md) | Funktionsbeschreibung je Bildschirm/Dienst |
 | [docs/bedienung.md](docs/bedienung.md) | Anwendung: Einrichtung, Aufzeichnung, Übertragung, Backup |
 | [docs/server-schnittstelle.md](docs/server-schnittstelle.md) | Server-Schnittstelle, abgestimmt mit dem [Positions-Tracking-Viewer](positions-tracking-viewer) |
+| [docs/datenschutz.md](docs/datenschutz.md) | Datenschutzerklärung (öffentlich, verlinkt in App Store Connect) |
 | [CHANGELOG.md](CHANGELOG.md) | Änderungen je Version |
 
 ## Bauen & Starten
@@ -74,6 +75,7 @@ Jeder Push mit Änderungen an der App bekommt eine eigene Software-Version:
 | 0.9.2 | 14 | `v0.9.2` | Release ohne private Daten mit Build-Sperre, Datenschutz-Manifest, Icon ohne Transparenz |
 | 0.10.0 | 15 | `v0.10.0` | Umschalter privat/geschäftlich, Feld `tripCategory` in Übertragung und Backup |
 | 0.11.0 | 16 | `v0.11.0` | Neue Bundle-ID `io.github.hondamz.gpstracker` |
+| 0.11.1 | 17 | `v0.11.1` | Datenschutzerklärung `docs/datenschutz.md` (nur Doku) |
 
 ¹ Build-Nummer wurde vor v0.3.0 noch nicht hochgezählt.
 
@@ -89,8 +91,9 @@ keine privaten Voreinstellungen, Tester starten mit vier leeren Serverzielen und
 - `GPSTracker/PrivacyInfo.xcprivacy` (Datenschutz-Manifest): kein Tracking, keine vom Entwickler erhobenen Daten,
   UserDefaults mit Grund `CA92.1`. Das App-Icon hat keinen Transparenzkanal (Vorgabe von Apple).
 
-Noch nötig: App-Eintrag in App Store Connect, Testbeschreibung und Kontakt-E-Mail; für externe Tester zusätzlich
-eine Datenschutzerklärung als Webseite.
+Datenschutzerklärung für App Store Connect:
+<https://github.com/hondamz/iphone-gps-tracker/blob/main/docs/datenschutz.md>. Sie liegt in `docs/datenschutz.md` und
+muss angepasst werden, wenn sich der Umgang der App mit Daten ändert.
 
 ## GitHub-Export
 
@@ -138,6 +141,6 @@ Weitere Details siehe [docs/anforderungen.md](docs/anforderungen.md).
 
 ---
 
-*Öffentlicher Export (Version 0.11.0). Private Voreinstellungen: `Config/PrivateDefaults.example.json` nach
+*Öffentlicher Export (Version 0.11.1). Private Voreinstellungen: `Config/PrivateDefaults.example.json` nach
 `GPSTracker/Resources/PrivateDefaults.json` kopieren, Signatur: `Config/Local.example.xcconfig` nach
 `Config/Local.xcconfig`.*
