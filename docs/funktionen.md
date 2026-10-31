@@ -1,8 +1,14 @@
 # Funktionen
 
-Stand: v0.5.0 (04.10.2026)
+Stand: v0.11.2 (31.10.2026)
+
+Die Bilder zeigen den Release-Build im Simulator mit Daten aus der Simulation (Betriebsart „Mainz, Paderborn &
+Deutschland“), also keine echten Fahrten und keine eingerichteten Server.
 
 ## Tab „Live“
+
+<img src="bilder/live.png" width="280" alt="Live-Karte mit Simulations-Banner, Kartenausschnitt, heutigem Weg und Statusleiste">
+
 - Karte folgt der aktuellen Position (Benutzerstandort-Button, Kompass, Maßstab).
 - **Genauigkeitskreis** um die Position, Farbe nach Qualität (grün ≤ 5 m, mint ≤ 15 m, orange ≤ 50 m, rot darüber).
 - Heutiger Weg (ab 0:00 Uhr) als blaue Linie.
@@ -19,6 +25,9 @@ Stand: v0.5.0 (04.10.2026)
 - Bei Simulation: lila Marker mit Fahrtrichtung und Banner „Simulation: <Route>“.
 
 ## Tab „Verlauf“
+
+<img src="bilder/verlauf.png" width="280" alt="Verlauf mit Zeitraum, Kartenausschnitt, grauer und blauer Strecke und Zeit-Slider">
+
 - Zeitraum: 1 Std., 24 Std., 7 Tage, 30 Tage oder eigener Zeitraum (Von/Bis); Vorauswahl aus den Einstellungen.
 - Gesamter Weg grau, der Teil bis zur Slider-Zeit blau, Startpunkt als Flagge.
 - Pausen über 5 Minuten trennen die Linie (getrennte Fahrten werden nicht verbunden).
@@ -30,6 +39,9 @@ Stand: v0.5.0 (04.10.2026)
 - „Aktualisieren“ setzt das Ende des Zeitraums auf jetzt.
 
 ## Tab „GPS-Daten“
+
+<img src="bilder/gps-daten.png" width="280" alt="GPS-Daten mit Position und Genauigkeit">
+
 - Position: Breite, Länge (6 Nachkommastellen ≈ 0,1 m), Höhe über Meeresspiegel und Ellipsoid, ggf. Stockwerk.
 - Genauigkeit: horizontal (mit Bewertung), vertikal, Geschwindigkeit, Kurs, Freigabe genau/ungefähr.
 - Bewegung: Geschwindigkeit (km/h), Kurs (°), Stillstand/in Bewegung.
@@ -41,17 +53,21 @@ Stand: v0.5.0 (04.10.2026)
 - Hinweis: Satellitenanzahl/Rohdaten stellt Apple nicht bereit.
 
 ## Tab „Einstellungen“
+
+<img src="bilder/einstellungen.png" width="240" alt="Einstellungen: Tracker und Aufzeichnung"> <img src="bilder/simulation-serverziele.png" width="240" alt="Einstellungen: Simulation und Serverziele"> <img src="bilder/backup-export.png" width="240" alt="Einstellungen: Backup, Export und Import">
+
 - **Tracker**: Name des Trackers (Vorschlag Gerätename, Button „Gerätenamen übernehmen“).
 - **Simulation**: Betriebsart (Aus / Mainz, Paderborn & Deutschland / Flughafen Köln/Bonn),
   Zeitraffer 1×/5×/20×/60×, aktuelle Route. Am Flughafen zufällige Abschnitte über das ganze Gelände
   plus gelegentliche Ausflüge nach Köln/Bonn (Auto oder Bahn).
 - **Aufzeichnung**: an/aus, Mindestabstand (1–500 m), max. Ungenauigkeit (5–500 m), Berechtigungsstatus,
   „Immer“ anfragen, Absprung in iOS-Einstellungen.
-- **Serverziele** (3 Stück): Zeile mit Name, Host, offenen Punkten bzw. „Fehler“ und Schalter **Aktiv**.
+- **Serverziele** (4 Stück): Zeile mit Name, Host, offenen Punkten bzw. „Fehler“ und Schalter **Aktiv**.
   Tippen öffnet die Details: Name, Aktiv, URL (Prüfung auf http/https), Benutzer, Passwort,
   Status (offen, letzte Übertragung, Fehler), „Jetzt an dieses Ziel übertragen“,
   „Rückstand verwerfen …“, „Alle Punkte erneut senden …“.
-- Ziel 4 ist mit dem Viewer über Tailscale vorbelegt; Warnung bei Tailscale-IPs, Knopf „Viewer-Adresse eintragen“.
+- Im Release-Build sind alle Ziele leer. Nur Debug-Builds mit eigener `PrivateDefaults.json` belegen Ziel 4 vor; dort
+  gibt es auch den Knopf „Viewer-Adresse eintragen“. Bei Tailscale-IPs erscheint eine Warnung.
 - **Übertragung**: Modus Live (Sammelintervall) / Zeitgesteuert (Uhrzeit, nächster Lauf) / Nur manuell –
   gilt für alle aktiven Ziele; „Jetzt an alle aktiven Ziele übertragen“, Summe offener Punkte.
 - **Verlauf**: Standard-Zeitraum.

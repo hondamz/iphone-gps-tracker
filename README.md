@@ -7,7 +7,7 @@ Simulations-Betriebsarten (Mainz/Paderborn/Deutschland und Flughafen Köln/Bonn)
 
 | | |
 |---|---|
-| **Status** | v0.11.1 (Build 17) – Datenschutzerklärung ergänzt; Build 0.11.0 (16) in TestFlight hochgeladen (31.10.2026) |
+| **Status** | v0.11.2 (Build 18) – Screenshots in der Funktionsbeschreibung; Build 0.11.0 (16) in TestFlight hochgeladen (31.10.2026) |
 | **Plattform** | iPhone, iOS 18+ · Swift 6 · SwiftUI · SwiftData · MapKit |
 | **Repository** | `<privates Git-Repo>` (privater Git-Server, privat) |
 | **Lokaler Ordner** | `iphone-gps-tracker` (Git-Arbeitskopie, Synology Drive) |
@@ -18,7 +18,7 @@ Simulations-Betriebsarten (Mainz/Paderborn/Deutschland und Flughafen Köln/Bonn)
 |---|---|
 | [docs/anforderungen.md](docs/anforderungen.md) | Anforderungen mit IDs und Umsetzungsstand |
 | [docs/architektur.md](docs/architektur.md) | Komponenten, Datenmodell, Abläufe, Entscheidungen |
-| [docs/funktionen.md](docs/funktionen.md) | Funktionsbeschreibung je Bildschirm/Dienst |
+| [docs/funktionen.md](docs/funktionen.md) | Funktionsbeschreibung je Bildschirm/Dienst, mit Screenshots |
 | [docs/bedienung.md](docs/bedienung.md) | Anwendung: Einrichtung, Aufzeichnung, Übertragung, Backup |
 | [docs/server-schnittstelle.md](docs/server-schnittstelle.md) | Server-Schnittstelle, abgestimmt mit dem [Positions-Tracking-Viewer](positions-tracking-viewer) |
 | [docs/datenschutz.md](docs/datenschutz.md) | Datenschutzerklärung (öffentlich, verlinkt in App Store Connect) |
@@ -76,6 +76,7 @@ Jeder Push mit Änderungen an der App bekommt eine eigene Software-Version:
 | 0.10.0 | 15 | `v0.10.0` | Umschalter privat/geschäftlich, Feld `tripCategory` in Übertragung und Backup |
 | 0.11.0 | 16 | `v0.11.0` | Neue Bundle-ID `io.github.hondamz.gpstracker` |
 | 0.11.1 | 17 | `v0.11.1` | Datenschutzerklärung `docs/datenschutz.md` (nur Doku) |
+| 0.11.2 | 18 | `v0.11.2` | Screenshots in `docs/funktionen.md` (nur Doku) |
 
 ¹ Build-Nummer wurde vor v0.3.0 noch nicht hochgezählt.
 
@@ -141,6 +142,6 @@ Weitere Details siehe [docs/anforderungen.md](docs/anforderungen.md).
 
 ---
 
-*Öffentlicher Export (Version 0.11.1). Private Voreinstellungen: `Config/PrivateDefaults.example.json` nach
+*Öffentlicher Export (Version 0.11.2). Private Voreinstellungen: `Config/PrivateDefaults.example.json` nach
 `GPSTracker/Resources/PrivateDefaults.json` kopieren, Signatur: `Config/Local.example.xcconfig` nach
 `Config/Local.xcconfig`.*

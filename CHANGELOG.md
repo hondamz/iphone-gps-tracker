@@ -4,6 +4,16 @@ Format angelehnt an [Keep a Changelog](https://keepachangelog.com/de/1.1.0/). Ve
 
 ## [Unreleased]
 
+## [0.11.2] – 2026-10-31 · Build 18
+
+### Neu
+- **Screenshots** der Hauptfunktionen in `docs/funktionen.md` (Bilder in `docs/bilder/`), aufgenommen mit dem
+  Release-Build in einem leeren Simulator. Nur Doku, App unverändert.
+
+### Geändert
+- `docs/funktionen.md` auf aktuellen Stand gebracht: vier Serverziele, Vorbelegung von Ziel 4 nur in Debug-Builds.
+
+
 ## [0.11.1] – 2026-10-31 · Build 17
 
 ### Neu
